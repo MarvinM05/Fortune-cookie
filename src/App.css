@@ -1,0 +1,61 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  font-family: 'Atma', cursive;
+  font-weight: 700;
+}
+
+p, blockquote, button{
+  font-family: 'Atma', cursive;
+  font-weight: 500;
+  font-size: large;
+}
+
+.App{
+
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  /* animation: kenburns-top 5s ease-out infinite alternate both; */
+}
+
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+
+.phrases{
+  background-color: rgb(226, 226, 220);
+  width: 430px;
+  height: 140px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 0.5rem;  
+  border-radius: 12px; 
+  box-shadow: 11px 10px 0px -1px rgba(0, 0, 0, 0.43);
+}
