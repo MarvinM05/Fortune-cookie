@@ -28,6 +28,7 @@ function App() {
 
   return (
     <div className="App" style={{ backgroundImage: img[bgImg] }}>
+      <div></div>
       <Title />
       <Phrases phraseData={phrases[phrase]} />
       <button onClick={changePhrase}>Otra frase</button>

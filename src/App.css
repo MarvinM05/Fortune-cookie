@@ -26,9 +26,9 @@ p, blockquote, button{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  /* animation: kenburns-top 5s ease-out infinite alternate both; */
+  gap: 2.5rem;
 }
+
 
 @keyframes kenburns-top {
   0% {
@@ -48,7 +48,7 @@ p, blockquote, button{
 
 .phrases{
   background-color: rgb(226, 226, 220);
-  width: 430px;
+  width: 90%;
   height: 140px;
   display: flex;
   flex-flow: column;
@@ -58,4 +58,41 @@ p, blockquote, button{
   gap: 0.5rem;  
   border-radius: 12px; 
   box-shadow: 11px 10px 0px -1px rgba(0, 0, 0, 0.43);
+}
+
+/* At the top level of your code */
+@media screen and (min-width: 600px) {
+  .phrases {
+    background-color: rgb(226, 226, 220);
+    width: 500px;
+    height: 140px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 0.5rem;
+    border-radius: 12px;
+    box-shadow: 11px 10px 0px -1px rgba(0, 0, 0, 0.43);
+  }
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  background-color: rgb(226, 226, 220);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }

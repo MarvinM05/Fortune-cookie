@@ -1,4 +1,5 @@
 // import bgImg from './assets/fortuna-1/fondo1.jpg'
+import Title from './Title'
 
 
 const Phrases = ({phraseData}) => {
